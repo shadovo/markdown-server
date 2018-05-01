@@ -1,17 +1,20 @@
-const fs = require('fs/promises');
+const fs = require('fs');
+const { promisify } = require('util');
+const lstatAsync = promisify(fs.lstat);
+const readFileAsync = promisify(fs.readFile);
 
 const BASE_PATH = `${__dirname}/../markdown`;
 
 const cache = {};
 
 function fileExists(name) {
-    return fs.lstat(`${BASE_PATH}/${name}.md`)
+    return lstatAsync(`${BASE_PATH}/${name}.md`)
         .then(stat => stat.isFile())
         .catch(() => false);
 }
 
 function fileContent(name) {
-    return fs.readFile(`${BASE_PATH}/${name}.md`, 'utf8')
+    return readFileAsync(`${BASE_PATH}/${name}.md`, 'utf8')
         .catch(err => {
             console.error('ERROR reading file ---> ', err);
         });

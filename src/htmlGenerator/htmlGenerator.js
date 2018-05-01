@@ -6,7 +6,7 @@ function getHtmlForFile(file) {
         .then(markdownReader.getMarkdownContent)
         .then(markdownConverter.convert)
         .catch(err => {
-            console.error('ERROR generating HTML ---> ', err);
+            console.error(`ERROR generating HTML ---> path:${file} ||| error:${err}`);
         });
 }
 
