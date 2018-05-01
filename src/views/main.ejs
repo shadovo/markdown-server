@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%- title %></title>
+    <style>
+        html, body,
+        p, span,
+        table,
+        hr,
+        h1, h2, h3, h4, h5, h6, h7, h8, h9,
+        .container {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica';
+            background: #fafafa;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6, h7, h8, h9 {
+            color: #333;
+            margin: 20px 0;
+            padding: 0;
+        }
+        h1 {
+            background: #e6e6e6;
+            padding: 10px;
+            margin-left: -10px;
+        }
+        p {
+            line-height: 1.5;
+        }
+        hr {
+            margin: 40px 0;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th {
+            background: #e6e6e6;
+        }
+        th, td {
+            padding: 5px;
+        }
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto; 
+            padding: 10px 40px 40px;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <%- content %>
+    </div>
+</body>
+</html>
