@@ -25,7 +25,7 @@ Tips på sort | [Star Nutrition](https://www.gymgrossisten.com/ultimate-omega-3-
 
 ## Glutamine
 Tillskott förhindrar muskelnedbrytning och ser till att hålla glutamine på en balanserad nivå vid träning, 
-bra för immunflrsvar och inre organ, sägs även minska träningsvärk.
+bra för immunförsvar och inre organ, sägs även minska träningsvärk.
 
 Glutamine |   | 
 --- | ---
